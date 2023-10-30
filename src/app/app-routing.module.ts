@@ -10,44 +10,11 @@ const routes: Routes = [
     pathMatch:'full',
     component:ChakraUIComponent
   },
-  // {
-  //   path:'views',component:ViewChakraComponent,
-    
-    
-
-    
-  // },
-
+ 
   {
-    path:'views',component:ViewChakraComponent,
-    
-    
-
-    
+    path:'views',component:ViewChakraComponent,   
   },
-  // {
-  //   path:'view',component:ChakraUIComponent,
-  //   pathMatch:'full'
-  // }
 
-  // {
-  //   path:'',
-  //   pathMatch:'full',
-  //   component:LandingComponent
-  // },
-  // {
-  //   path:'login',
-  //   component:LoginComponent,
-
-  // },
-  // {
-  //   path:'sign-up',
-  //   component:SignUpComponent,
-  // },
-  // {
-  //   path:'home',
-  //   component:HomeComponent
-  // }
 ];
 
 @NgModule({
