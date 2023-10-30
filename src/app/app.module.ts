@@ -8,22 +8,24 @@ import { environment } from 'src/environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { LandingComponent } from './components/landing/landing.component';
-import { LoginComponent } from './components/login/login.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { HomeComponent } from './components/home/home.component';
 import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChakraUIComponent } from './components/chakra-ui/chakra-ui.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
+import { ViewChakraComponent } from './components/view-chakra/view-chakra.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button'
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
-    LoginComponent,
-    SignUpComponent,
-    HomeComponent
+    ChakraUIComponent,
+    ViewChakraComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     BrowserAnimationsModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    HttpClientModule,
+    MatCardModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatButtonModule
+    
+
   ],
   providers: [
     

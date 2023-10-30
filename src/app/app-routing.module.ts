@@ -1,30 +1,53 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingComponent } from './components/landing/landing.component';
-import { LoginComponent } from './components/login/login.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { HomeComponent } from './components/home/home.component';
+import { ViewChakraComponent } from './components/view-chakra/view-chakra.component';
+import { ChakraUIComponent } from './components/chakra-ui/chakra-ui.component';
+
 
 const routes: Routes = [
-
   {
-    path:'',
+    path :'',
     pathMatch:'full',
-    component:LandingComponent
+    component:ChakraUIComponent
   },
-  {
-    path:'login',
-    component:LoginComponent,
+  // {
+  //   path:'views',component:ViewChakraComponent,
+    
+    
 
-  },
+    
+  // },
+
   {
-    path:'sign-up',
-    component:SignUpComponent,
+    path:'views',component:ViewChakraComponent,
+    
+    
+
+    
   },
-  {
-    path:'home',
-    component:HomeComponent
-  }
+  // {
+  //   path:'view',component:ChakraUIComponent,
+  //   pathMatch:'full'
+  // }
+
+  // {
+  //   path:'',
+  //   pathMatch:'full',
+  //   component:LandingComponent
+  // },
+  // {
+  //   path:'login',
+  //   component:LoginComponent,
+
+  // },
+  // {
+  //   path:'sign-up',
+  //   component:SignUpComponent,
+  // },
+  // {
+  //   path:'home',
+  //   component:HomeComponent
+  // }
 ];
 
 @NgModule({
